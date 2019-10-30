@@ -11,6 +11,31 @@ header {
     font-family: Sailec-Medium,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
+/*** MOBILE MENU ***/
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: hsla(0,0%,100%,.5);
+    display: block;
+    width: 27px;
+    height: 5px;
+    border-radius: 1px;
+}
+
+/*** DESKTOP MENU ***/
+
 /*** FIRST PART OF THE HEADER ***/
 
 #header-top {
@@ -216,4 +241,66 @@ h1 {
 
 #sponsors a:hover {
     text-decoration: none;
+}
+
+/*** FIRST MAIN CONTENT ***/
+
+#deploy {
+    padding: 100px 0 70px 0;
+}
+
+/*** SECOND MAIN CONTENT ***/
+
+#for-developers {
+    background-color: #f3f5f9;
+    padding: 100px 0 70px 0;
+}
+
+/*** THIRD MAIN CONTENT ***/
+
+#business {
+    padding: 100px 0 70px 0;
+}
+
+/*** FOURTH MAIN CONTENT ***/
+
+#around-the-world {
+    background: #031b4e url("https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 70px 0;
+    color: white;
+}
+
+/*** FIFTH MAIN CONTENT ***/
+
+#development {
+    background-color: #f3f5f9;
+    padding: 100px 0 70px 0;
+}
+
+/*** GET STARTED ***/
+
+#get-started {
+    background-image: url("https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg");
+    padding: 50px 0;
+    color: white;
+}
+
+/*** FOOTER ***/
+
+footer {
+    background-color: black;
+}
+
+/*** MY MEDIA QUERY ***/
+
+@media screen and (min-width: 1048px) {
+    .navbar-collapse.collapse {
+        display: block;
+        height: auto;
+        padding-bottom: 0;
+        overflow: visible;
+    }
 }
