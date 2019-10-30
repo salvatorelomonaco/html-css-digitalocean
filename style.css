@@ -292,6 +292,8 @@ h1 {
 
 footer {
     background-color: black;
+    padding: 50px 0;
+    color: white;
 }
 
 /*** MY MEDIA QUERY ***/
