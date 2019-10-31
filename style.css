@@ -44,6 +44,13 @@ header {
 
 /*** MOBILE MENU ***/
 
+#logo-mobile {
+    margin-left: 15px;
+    width: 100px;
+    transform: translateY(10%);
+    height: 50px;
+}
+
 .navbar-toggle {
     position: relative;
     float: right;
@@ -241,8 +248,13 @@ h1 {
     right: 0;
 }
 
-.terms{
+.terms {
     padding-top: 20px;
+}
+
+#my-form a {
+    text-decoration: underline;
+    color: #0069ff;
 }
 
 /*** SECTION SPORSORS ***/
@@ -261,6 +273,7 @@ h1 {
     object-fit: contain;
     height: 79px;
     margin-bottom: 20px;
+
 }
 
 #splunk {
@@ -289,7 +302,7 @@ h1 {
 }
 
 #deploy ul {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #deploy li:first-child {
@@ -319,13 +332,35 @@ h1 {
 
 #for-developers img {
     margin-bottom: 30px;
+    position: relative;
 }
 
+#for-developers img::before {
+    content: "\f053";
+    font-family: "FontAwesome";
+    color: red;
+    height: 20px;
+    position: absolute;
+}
+
+#for-developers img::after {
+    content: "\f053";
+    font-family: "FontAwesome";
+    display: inline-block;
+    width: 20px;
+    color: red;
+    height: 20px;
+    position: absolute;
+}
 
 /*** THIRD MAIN CONTENT ***/
 
 #business {
     padding: 90px 0 70px 0;
+}
+
+#business .fa-dharmachakra {
+    padding-top: 30px;
 }
 
 #business h2 {
@@ -349,6 +384,10 @@ h1 {
 #business a>i {
     font-size: 11px;
     margin-left: 5px;
+}
+
+#business .col-xs-12 {
+    height: 250px;
 }
 
 /*** FOURTH MAIN CONTENT ***/
@@ -431,14 +470,24 @@ footer li a:hover {
     color: grey;
 }
 
+.navbar-header {
+    background-color: #0248ff;
+}
+
 /*** MY MEDIA QUERY ***/
 
+
+
 @media screen and (min-width: 768px) and (max-width: 1047px) {
-    .navbar-collapse {
+    .navbar-collapse.collapse {
         display: none !important;
     }
-    .navbar-header {
+    .navbar-header, .navbar-toggle {
         display: block !important;
+    }
+
+    .navbar-header {
+        float: none;
     }
 }
 
