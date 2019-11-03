@@ -424,9 +424,6 @@ td {
     color: #5b6987;
 }
 
-tr td:nth-child(2) {
-    padding: 0 220px 0 50px;
-}
 
 #around-the-world i {
     color: #00d7d2;
