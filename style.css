@@ -353,6 +353,13 @@ h1 {
     position: absolute;
 }
 
+#for-developers i {
+    margin-top: 20px;
+    padding: 0 5px;
+    font-size: 10px;
+    color: #0069ff;
+}
+
 /*** THIRD MAIN CONTENT ***/
 
 #business {
@@ -394,11 +401,49 @@ h1 {
 
 #around-the-world {
     background: #031b4e url("https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg");
-    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0 70px 0;
+    padding: 100px 0 150px 0;
     color: white;
+}
+
+#around-the-world h2 {
+    margin-bottom: 50px;
+}
+
+tr:not(.last-row) {
+    border-bottom: 1px solid #5b6987;
+}
+
+th {
+    padding: 10px 0 10px 10px;
+}
+
+td {
+    font-size: 13px;
+    color: #5b6987;
+}
+
+tr td:nth-child(2) {
+    padding: 0 220px 0 50px;
+}
+
+#around-the-world i {
+    color: #00d7d2;
+    font-size: 10px;
+}
+
+#around-the-world i:hover {
+    color: #005fe6;
+}
+
+#around-the-world a {
+    color: #00d7d2;
+}
+
+#around-the-world a:hover {
+    color: #005fe6;
+    text-decoration: none;
 }
 
 /*** FIFTH MAIN CONTENT ***/
@@ -411,6 +456,17 @@ h1 {
 #development a {
     color: #0069ff;
     text-decoration: underline;
+}
+
+#development i {
+    margin-top: 20px;
+    padding: 0 5px;
+    font-size: 10px;
+    color: #0069ff;
+}
+
+.box {
+    background-color: white;
 }
 
 /*** GET STARTED ***/
