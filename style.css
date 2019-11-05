@@ -1,4 +1,10 @@
 /*** GENERAL RULES ***/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
 }
@@ -330,27 +336,35 @@ h1 {
     padding: 100px 0 70px 0;
 }
 
-#for-developers img {
+#for-developers .my-wrapper {
     margin-bottom: 30px;
     position: relative;
 }
 
-#for-developers img::before {
+#for-developers .my-wrapper::before {
     content: "\f053";
-    font-family: "FontAwesome";
-    color: red;
-    height: 20px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    top: 50%;
+    left: -60px;
+    position: absolute;
+    color: lightgrey;
+}
+
+#for-developers .my-wrapper::after {
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    transform: rotateY(180grad);
+    top: 50%;
+    right: -60px;
     position: absolute;
 }
 
-#for-developers img::after {
-    content: "\f053";
-    font-family: "FontAwesome";
-    display: inline-block;
-    width: 20px;
-    color: red;
-    height: 20px;
-    position: absolute;
+#for-developers .my-wrapper::after:hover {
+    color: #0069ff;
 }
 
 #for-developers i {
@@ -394,7 +408,7 @@ h1 {
 }
 
 #business .col-xs-12 {
-    height: 250px;
+    height: 320px;
 }
 
 /*** FOURTH MAIN CONTENT ***/
@@ -403,7 +417,7 @@ h1 {
     background: #031b4e url("https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0 150px 0;
+    padding: 100px 0 100px 0;
     color: white;
 }
 
@@ -424,6 +438,9 @@ td {
     color: #5b6987;
 }
 
+table {
+    margin-bottom: 30px;
+}
 
 #around-the-world i {
     color: #00d7d2;
@@ -462,8 +479,46 @@ td {
     color: #0069ff;
 }
 
-.box {
+#development img {
+    height: 25px;
+    margin: 0 auto;
+}
+
+.my-wrapper-2 p {
+    margin: 30px 0;
+    font-size: 25px;
+}
+
+.my-wrapper-2 {
     background-color: white;
+    position: relative;
+    padding: 20px 20px;
+}
+
+.my-wrapper-2::before {
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    top: 50%;
+    left: -60px;
+    position: absolute;
+    color: lightgrey;
+}
+
+.my-wrapper-2::after {
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    transform: rotateY(180grad);
+    top: 50%;
+    right: -60px;
+    position: absolute;
+}
+
+#for-developers .my-wrapper::after:hover {
+    color: #0069ff;
 }
 
 /*** GET STARTED ***/
@@ -529,7 +584,15 @@ footer li a:hover {
 
 /*** MY MEDIA QUERY ***/
 
+@media screen and (max-width: 900px) {
+    .my-wrapper-2::after {
+        display: none;
+    }
 
+    .my-wrapper::after {
+        display: none;
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1047px) {
     .navbar-collapse.collapse {
